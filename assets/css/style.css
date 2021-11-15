@@ -1,0 +1,868 @@
+
+/*----------------Подключение шрифта------------------------------*/
+@font-face {
+	font-family: "GardensC";
+	src: url("fonts/GardensC.otf");
+}
+/*------------------Настройки всех элементов документа------------------*/
+*{
+	font-family:"GardensC";
+	margin: 0;
+	padding: 0;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+
+/*--------------Настройки содержимого тела документа-----------------*/
+body{
+	position:relative;
+}
+
+/*--------------Общие настройки для блоков главной страницы-----------*/
+section.panel{
+	width:100%;
+	padding: 0 130;
+	float:none;
+	overflow:hidden;
+}
+section h1{
+	color:#1a203a;
+	font-size:5em;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+
+/*------------Общие настройки для заголовков блоков главной страницы------------*/
+.section-title{
+	font-size: 50px;
+	color:#3d67b0;
+	text-align:center;
+}
+
+/*------------------Оформление для блока Стартовый экран---------------*/
+section#first-page{
+	height:120vh; 
+	color:#fff;
+	background-image: url("../img/first-page-bg.png");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+}
+
+section#first-page > header{
+	width: 100%;
+	height:70px;
+	background-color:#1a203a;
+}
+
+section#first-page > header img{
+	width: 200px;
+	float:left;
+}
+section#first-page > header nav{
+	text-align:right;
+	padding-top:20px;
+	font-size: 1.5em;
+	color: #fff;
+}
+
+section#first-page > header h1{
+	color:#1a203a;
+	font-size:5em;
+	text-align:center;
+	margin-bottom:30px;
+}
+
+section#first-page > header nav>a{
+	color: #fff;
+	text-decoration: none;
+}
+
+section#first-page > header nav>a:hover{
+	text-decoration: underline;
+}
+/*------------------ Конец оформления для секции Стартовый экран---------------*/
+
+
+/*----------------------Оформление секции Инфографика--------------------------*/
+section#infographics{
+	background: transparent;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	min-height:50vh;
+	overflow:hidden;
+}
+section#infographics h2{
+	text-align:center;
+	font-style:italic;
+}
+
+section#infographics form{
+	padding:30px;
+}
+
+section#infographics input[type=button],section#search input[type=text] {
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+}	
+
+section#infographics input[type=button]{
+    background-color:#ff9000;
+	position:relative;
+margin-top:50px;
+	left:30%;
+	height:80px;
+	width:40%;
+	font-size:2em;
+	color:#fff;
+}	
+section#infographics img{
+	position:relative;
+    left:20%;
+}
+
+section#infographics input[type=text]{
+	padding-left:10px;
+	height:50px;
+	width:49%;
+	font-size:1em;
+}	
+
+
+/*------------------ Конец оформления для секции Инфографика---------------*/
+
+
+
+/*----------------------Оформление секции Доверие--------------------------*/
+
+section#trust{
+	color: #fff;
+	margin-bottom: 30px;
+	min-height: 90vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+section#trust .review{
+	background-color: #c4c7cc;
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 50px;
+	opacity:0.8;
+	color:#1a203a;
+}
+
+section#trust .review h3{
+	font-size:2em;
+	padding-bottom:20px;
+}
+
+section#trust .review p.comment{
+	font-size:1em;
+	padding-bottom:20px;
+}
+
+section#trust .review p.autor{
+	text-align:right;
+	font-style:bold;
+}
+
+/*----------------------Конец оформления секции Доверие--------------------------*/
+
+
+/*----------------------Оформление секции Поиск--------------------------*/
+section#search{
+	padding-top: 15%;
+	/*border:1px solid #1a203a;*/
+	min-height:70vh;
+	background: url("../img/search-bg.png") center no-repeat;
+	background-size:100% 100%;
+}
+
+section#search input[type=button],section#search input[type=text] {
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+}	
+
+section#search input[type=button]{
+    background-color:#1a203a;
+	margin-top:50px;
+	position:relative;
+	left:30%;
+	height:80px;
+	width:40%;
+	font-size:2em;
+	color:#fff;
+}	
+
+section#search input[type=text]{
+	padding-left:10px;
+	height:50px;
+	width:19.3%;
+	font-size:1em;
+}	
+
+
+/*----------------------Конец оформления секции Поиск--------------------------*/
+
+div.content{
+	width:80%;
+	height:100%;
+	margin:0 auto;	
+}
+
+/*----------------------Оформление секции Акции--------------------------*/
+
+section#shares{
+	padding:50px;
+	min-height:90vh;
+	background-color:#ff9000;
+}
+
+section#shares .promo{
+	width:25%;
+	float:left;
+	padding:20px 20px 20px 20px;
+	
+}
+section#shares .promo img{
+	width:100%;
+	padding-top:30px;
+}
+section#shares .promo h3{
+	text-align:center;
+ 	padding-top:30px;
+	font-size:2em;
+}
+section#shares .promo p{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+section#shares .promo input[type=button] {
+	background-color: #1a203a ;
+    border: none;
+    color: #c4c7cc;
+	text-align:center;
+	height:50px;
+    text-decoration: none;
+	font-size:1.4em;
+	width:100%;
+    cursor: pointer;
+	border-radius: 6px;
+	bottom:0px;
+}	
+
+/*-------------------Конец оформления секции Акции--------------------------*/
+
+
+/*-------------------Начало оформления секции Подписка--------------------------*/
+section#sub{
+		padding:100px;
+	min-height: 60vh;
+	background-color:#fff;
+}
+
+section#sub h1{
+	font-size:5em;
+	text-align:center;
+	margin-bottom:50px;
+}
+section#sub input[type=button],section#sub input[type=text] {
+	color: #c4c7cc;
+    padding: 16px 64px;
+    text-decoration: none;
+	font-size:3em;
+	width:100%;
+    cursor: pointer;
+	border-radius: 6px;
+	margin:20px;
+	border:3px solid #1a203a;
+}	
+
+section#sub input[type=button]{
+	background-color: #ff9000 ;
+	border: none;
+	color: #fff;
+}	
+
+/*-------------------Конец оформления секции Подписка--------------------------*/
+
+/*-------------------Начало оформления секции Подвал--------------------------*/
+footer {
+	height: 440px;
+	width: 100%;
+	background: url("../img/background-footer.png") center no-repeat;
+	background-size:100% 100%;
+	padding-top:250px;
+	color: #fff;
+}
+footer h1 {
+	font-size: 5em;
+	text-align:center;
+
+}
+footer p{
+	text-align:center;
+	margin-top:50px;
+
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
+	cursor:pointer;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+
+/*-------------------Конец оформления секции Подвал--------------------------*/
+
+
+/*------------------Оформление для блока Стартовый экран для вложенных страниц---------------*/
+section#first-page-in{
+	height:20vh; /*высота в процентах от размера экрана*/
+	color:#fff;
+}
+
+section#first-page-in > header{
+	width: 100%;
+	height:70px;
+	background-color:#1a203a;
+}
+
+section#first-page-in > header img{
+	width: 200px;
+	float:left;
+}
+
+section#first-page-in > header h1{
+	float:left;
+	color:#fff;
+	font-size:3em;
+	padding-left:30px;
+	padding-top:10px;
+}
+
+section#first-page-in > header nav{
+	text-align:right;
+	padding-top:24px;
+	font-size: 1.2em;
+	color: #fff;
+}
+
+section#first-page-in > header nav>a{
+	color: #fff;
+	text-decoration: none;
+}
+
+section#first-page-in > header nav>a:hover{
+	text-decoration: underline;
+}
+/*------------------ Конец оформления для секции Стартовый экран для вложенных страниц---------------*/
+
+
+/*----------------------Оформление страницы Вход в ЛК--------------------------*/
+section#login{
+	background: transparent;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	min-height:50vh;
+	overflow:hidden;
+}
+section#login h2{
+	text-align:center;
+	font-style:italic;
+}
+
+section#login form{
+	padding:30px;
+	margin:0 auto;
+}
+
+section#login input[type=button],section#login input[type=text] ,section#login input[type=password]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	height:80px;
+	width:49%;
+	font-size:2em;
+	}	
+
+section#login input[type=button]{
+    background-color:#ff9000;
+	margin-top:50px;
+	color:#fff;
+}	
+section#login input[type=button].register{
+    background-color:#fff;
+	margin-top:50px;
+	color:#1a203a;
+}	
+
+section#login input[type=text],section#login input[type=password]{
+	padding-left:10px;
+}	
+
+section#login input[type=button]:hover {
+
+	border:3px solid #1a203a;
+}
+/*------------------ Конец оформления для секции Вход в ЛК---------------*/
+
+/*----------------------Оформление страницы Регистрация--------------------------*/
+section#register{
+	background: transparent;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	min-height:50vh;
+	overflow:hidden;
+}
+section#register h2{
+	text-align:center;
+	font-style:italic;
+}
+
+section#register form{
+	padding:30px;
+	margin:0 auto;
+}
+
+section#register input[type=button],section#register input[type=text] ,section#register input[type=password]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	height:80px;
+	width:100%;
+	font-size:2em;
+	}	
+
+section#register input[type=button]{
+    background-color:#ff9000;
+	margin-top:50px;
+	color:#fff;
+}	
+section#register input[type=button].register{
+    background-color:#ff9000;
+	margin-top:50px;
+	color:#1a203a;
+}	
+
+section#register input[type=text],section#register input[type=password]{
+	padding-left:10px;
+	margin-bottom:15px;
+}	
+
+section#register input[type=button]:hover {
+	border:3px solid #1a203a;
+}
+
+dialog {
+    background: rgba(255, 255, 255, 0.9);
+    min-width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    border-radius: 6px;
+	margin:0 auto;
+	padding:20px
+} 
+	  dialog p{
+		  font-size:1.5em;
+	  }
+	  
+	  dialog button{
+		cursor:pointer;
+		margin-left:75px;
+		margin:20px auto;
+		padding:20px;
+		font-size:1em;
+		border-radius: 6px;  	  
+	  }
+
+/*------------------ Конец оформления для страницы Регистрация---------------*/
+
+
+/*--------------------Начало оформления для страницы Личный кабинет-------------------------------*/
+
+/*----------------------Оформление секции Бронирования--------------------------*/
+
+section#reserv{
+	color: #fff;
+	margin-bottom: 30px;
+	min-height: 90vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+section#reserv h2{
+	text-align:center;
+	padding-top:15px;
+	font-size:2em;
+	color:#ff9000;
+}
+
+section#reserv .reserv-n{
+	background-color: #c4c7cc;
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 40px;
+	opacity:0.8;
+	color:#1a203a;
+}
+
+section#reserv .reserv-n h3{
+	font-size:2em;
+	padding-bottom:20px;
+}
+
+section#reserv .reserv-n h4{
+	font-size:1em;
+	padding-bottom:5px;
+}
+
+section#reserv .reserv-n input{
+	text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	min-height:40px;
+	width:100%;
+	font-size:1.5em;
+	padding:20px;
+	margin:30px auto 0;
+	cursor:pointer;
+}
+/*----------------------Оформление секции Персональная информация--------------------------*/
+section#personal_data{
+	background: transparent;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	min-height:50vh;
+	overflow:hidden;
+}
+
+section#personal_data h3{
+	text-align:center;
+	font-style:italic;
+	padding-top:15px;
+	font-size:2em;
+}
+
+/*--------------------Конец оформления для страницы Личный кабинет-------------------------------*/
+
+
+
+/*----------------------Начало оформления страницы Результаты поиска--------------------------*/
+
+section#search-result{
+	color: #fff;
+	margin-bottom: 30px;
+	min-height: 90vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+
+section#search-result .search-result-n{
+	background-color: #c4c7cc;
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 40px;
+	opacity:0.8;
+	color:#1a203a;
+}
+
+section#search-result .search-result-n h3{
+	font-size:2em;
+	padding-bottom:20px;
+}
+
+section#search-result .search-result-n input{
+	text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	min-height:40px;
+	width:100%;
+	font-size:1.5em;
+	padding:10px;
+	margin:10px auto 0;
+	cursor:pointer;
+}
+
+section#search-result .search-result-n td.btw{
+	border-bottom:1px solid #1a203a;
+}
+
+section#search-result input[type=button]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	height:80px;
+	width:50%;
+	font-size:2em;
+	background-color:#ff9000;
+	margin-left:25%;
+	cursor:pointer;
+	color:#fff;
+	}	
+/*---------------------Конец оформления страницы Результаты поиска--------------------------*/
+
+
+/*----------------------Начало оформления страницы Бронирование--------------------------*/
+
+section#booking{
+	color: #fff;
+	margin-bottom: 30px;
+	min-height: 90vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+
+section#booking .booking{
+	background-color: #c4c7cc;
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 40px;
+	opacity:0.8;
+	color:#1a203a;
+}
+
+
+section#booking .booking input{
+	text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	min-height:40px;
+	width:100%;
+	font-size:1.5em;
+	padding:10px;
+	margin:10px auto 0;
+	cursor:pointer;
+}
+
+section#booking .booking td.btw{
+	font-size:2em;
+	padding-bottom:20px;
+}
+section#booking .booking td{
+	padding:10px;
+}
+
+section#booking input[type=button]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	height:80px;
+	width:50%;
+	font-size:2em;
+	background-color:#ff9000;
+	margin-left:25%;
+	cursor:pointer;
+	color:#fff;
+	}	
+	
+section#booking .pass{
+	background-color: #c4c7cc;
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 40px;
+	opacity:0.8;
+	color:#1a203a;
+}	
+	
+	section#booking form{
+	padding:30px;
+	margin:0 auto;
+}
+
+section#booking input[type=text]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	height:50px;
+	margin:10px;
+	padding:10px;
+	font-size:1.5em;
+	width:100%;
+	}	
+
+section#booking .pass input[type=button]{
+    background-color:#1a203a;
+	margin:10px;
+	width:47%;
+	color:#fff;
+
+}	
+section#booking h3{
+	text-align:center;
+	font-size:2em;
+	padding:20px;
+	margin:20px;
+	color:#1a203a;
+}
+/*---------------------Конец оформления страницы бронирование--------------------------*/
+
+
+/*----------------------Начало оформления страницы Настройка бронирования--------------------------*/
+
+section#booking-man{
+	color: #fff;
+	margin-bottom: 30px;
+	min-height: 90vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+
+
+section#booking-man .booking-man{
+
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:90%;
+	margin:30px auto;
+	padding: 40px;
+	background-color:#fff;
+	opacity:0.7;
+	color:#1a203a;
+}
+
+
+section#booking-man .booking-man input{
+	text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	min-height:40px;
+	width:100%;
+	font-size:1.5em;
+	padding:10px;
+	margin:10px auto 0;
+	cursor:pointer;
+}
+
+
+section#booking-man .booking-man td,tr, .pass td,tr{
+	padding:10px;
+}
+
+section#booking-man .booking-man table, .pass table{
+	margin:0 auto;
+}
+section#booking-man .booking-man table{
+	width:80%;
+
+}
+
+section#booking-man input[type=button]{
+    text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	width:100%;
+	font-size:1em;
+	background-color:#ff9000;
+	cursor:pointer;
+	color:#fff;
+	}	
+	
+	
+section#booking-man .pass{
+	border:1px solid #1a203a;
+	border-radius:6px;
+	height:30%;
+	width:80%;
+	margin:30px auto;
+	padding: 40px;
+	color:#1a203a;
+	text-align:center;
+	background-color: #c4c7cc;
+	opacity:0.8;
+}	
+	
+
+section#booking-man h3{
+	text-align:center;
+	font-size:2em;
+	padding:20px;
+	margin:20px;
+	color:#1a203a;
+}
+
+section#booking-man h3.fly{
+font-style:italic;
+	color:#ff9000;
+}
+/*---------------------Конец оформления страницы настройка бронирования--------------------------*/
+
+
+/*----------------------Начало оформления страницы Выбор места--------------------------*/
+
+section#seat{
+	color: #1a203a;
+	margin-bottom: 30px;
+	min-height: 70vh;
+	background: url("../img/about-us-bg.png") center no-repeat;
+	background-size:100% 100%;
+	overflow:hidden;
+	font-size:16pt;
+}
+
+section#seat table{
+	width:60%;
+	margin:0 auto;
+	border:1px solid #1a203a;
+	background-color:#c0c0c0;
+	opacity:0.8;
+}
+
+section#seat td{
+	padding:1%;
+}
+
+section#seat td.seat:hover{
+	background-color:red;
+}
+
+section#seat td.bold{
+	font-weight:bold;
+	text-align:center;
+}
+
+section#seat input[type="button"]{
+	text-decoration: none;
+	border-radius: 6px;
+	border:2px solid #1a203a;
+	min-height:40px;
+	width:100%;
+	font-size:1.5em;
+	padding:10px;
+	margin:10px auto 0;
+	cursor:pointer;
+}
+
+
+/*---------------------Конец оформления страницы Выбор места--------------------------*/
+
+
+
+

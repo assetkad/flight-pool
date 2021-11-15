@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+		<!--Начало блока Стартовый экран-->
+		<!--этот блок на вложенных страницах имеет свое оформление: занимает меньше места и не содержит фонового изображения-->
+		<section class="panel" id="first-page-in">
+			 <header>
+			 	<div class="content">
+					<a href="index.html"><img src="assets/img/logo.png" class="test-0-logo"></a><!--Логотип-->
+					
+					<h1>FlightPool</h1>
+									
+					<nav><!--Начало блока меню-->
+						  <a href="index.html#shares" class="test-0-nav-1">Акции</a> |
+						  <a href="index.html#search" class="test-0-nav-2">Поиск</a> |
+						  <a href="signup.html" class="test-0-nav-3">Регистрация на рейс</a> |
+						  <a href="login.html" class="test-0-nav-4">Личный кабинет</a> 
+					</nav><!--Конец блока меню-->
+				</div> 
+			 </header>
+		</section>
+		<!--Конец блока Стартовый экран-->
+		
+		<!--Начало блока Вход в ЛК-->
+		<section class="panel" id="personal_data">
+			<div class="content">
+
+				<h1>Уважаемый <span class="test-3-name">Иван</span> <span class="test-3-last">Иванов</span>!</h1>
+				<h3>Количество совершенных вами полетов <span class="test-3-num">11</span>.</h3>
+				<h3>Спасибо что остаетесь с нами!</h3>
+			</div>			
+		</section>
+
+		<!--Начало блока Бронирование-->
+		<section class="panel" id="reserv">
+			<div class="content">
+			<h2>Предстоящие бронирования</h2>
+				<div class="reserv-n">
+					<h3 class="date test-3-d1">15/02/2020</h3>
+					<h3>Рейс <span class="code test-3-code">112к<span> <span class="from">Москва (Внуково)</span> - <span class="to">Омск</span></h3>
+					<h4>Время вылета: <span class="time1 test-3-d1">15:20<span></h4>
+					<h4>Время прилета: <span class="time2 test-3-t2">17:40</span></h4>	
+					<input type="button" value="Подробнее" id="reserv-more" onclick="parent.location='booking_management.html'">
+				</div>
+				<div class="reserv-n">
+					<h3 class="date test-3-d1">15/02/2020</h3>
+					<h3>Рейс <span class="code test-3-code">112к<span> <span class="from">Москва (Внуково)</span> - <span class="to">Омск</span></h3>
+					<h4>Время вылета: <span class="time1 test-3-d1">15:20<span></h4>
+					<h4>Время прилета: <span class="time2 test-3-t2">17:40</span></h4>	
+					<input type="button" value="Подробнее" id="reserv-more" onclick="parent.location='booking_management.html'">
+				</div>
+
+			</div>
+		</section>
+		<!--Конец блока Бронирование-->		
+				
+		<!--Блок Подвал одинаковый на всех страницах, создается один раз на странице главная и копируется на все страницы проекта-->
+		<footer class="panel">
+			<div class="content">
+			
+				<h1>8 (800) 100-10-10</h1>
+			<p>
+				<a href="index.html">Главная</a>    |
+				<a href="login.html">Войти в личный кабинет</a>    |
+				<a href="signup.html">Зарегистрироваться</a>    |	
+				<a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+			</p>
+			</div>
+		</footer>
+		<!--Конец блока Подвал-->
+	
+	</body>
+</html>

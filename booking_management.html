@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+		<!--Начало блока Стартовый экран-->
+		<!--этот блок на вложенных страницах имеет свое оформление: занимает меньше места и не содержит фонового изображения-->
+		<section class="panel" id="first-page-in">
+			 <header>
+			 	<div class="content">
+					<a href="index.html"><img src="assets/img/logo.png" class="test-0-logo"></a><!--Логотип-->
+					
+					<h1>FlightPool</h1>
+									
+					<nav><!--Начало блока меню-->
+						  <a href="index.html#shares" class="test-0-nav-1">Акции</a> |
+						  <a href="index.html#search" class="test-0-nav-2">Поиск</a> |
+						  <a href="signup.html" class="test-0-nav-3">Регистрация на рейс</a> |
+						  <a href="login.html" class="test-0-nav-4">Личный кабинет</a> 
+					</nav><!--Конец блока меню-->
+				</div> 
+			 </header>
+		</section>
+		<!--Конец блока Стартовый экран-->
+
+		<!--Начало блока Бронирование-->
+		<section class="panel" id="booking-man">
+			<div class="content">
+			<h1>Управляйте своими полетами</h1>
+				<h3>Ваше бронирование № <span class="test-6-code">12345</span> стоимостью <span class="test-6-tp">9000 р</span></h3>
+				<div class="booking-man">
+				<h3 class="fly">Перелет Москва-Казань</h3>
+					<table class="perelet">
+						<thead>
+							<th>№</th>
+							<th>Воздушное судно</th>
+							<th>Название города вылета</th>
+							<th>Название аэропорта вылета</th>
+							<th>Дата и время вылета</th>
+							<th>Название города назначения</th>
+							<th>Название аэропорта назначения</th>
+							<th>Время прибытия</th>
+							<th>Время в пути</th>
+							<th>Вероятность вылета</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="test-6-fc">SU 1192 </span></td>
+								<td><span class="test-6-at" >Airbus A321</span></td>
+								<td><span class="test-6-fcity">Москва</span></td>
+								<td><span class="test-6-from">Шереметьево</span></td>
+								<td>
+									<span class="test-6-dd">8/10/2020</span><br>
+									<span class="test-6-dt">15-00</span>
+								</td>
+								<td><span class="test-6-tcity">Казань</span></td>
+								<td><span class="test-6-to">Казань</span></td>
+								<td><span class="test-6-at">16-30</span></td>
+								<td><span class="test-6-ft" >2 часа</span></td>
+								<td><span class="test-6-fh" >Тут должна быть картинка</span></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<h3>Пассажиры рейса</h3>
+					<div class="pass">
+						<table>
+						<thead>
+							<th>Имя</th>
+							<th>Фамилия</th>
+							<th>Дата рождения</th>
+							<th>Номер документа</th>
+							<th>Место в салоне туда</th>
+							<th>Место в салоне обратно</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="test-6-name">Иван </span></td>
+								<td><span class="test-6-last" >Иванов</span></td>
+								<td><span class="test-6-dob">25.06.1990</span></td>
+								<td><span class="test-6-doc">8710 222555</span></td>
+								<td>
+									<span class="test-6-ts" >1</span> <br> 
+									<input class="test-6-select" type="button" value="Выбрать место" onclick="parent.location='seat.html';">
+								</td>
+								<td><span class="test-6-bs" >2</span> <br> 
+									<input class="test-6-select" type="button" value="Выбрать место" onclick="parent.location='seat.html';">
+								</td>
+							</tr>
+							
+						</tbody>
+						</table>											
+					</div>
+					
+					<h3 class="fly">Перелет Казань-Москва</h3>
+					<table>
+						<thead>
+							<th>№</th>
+							<th>Воздушное судно</th>
+							<th>Название города вылета</th>
+							<th>Название аэропорта вылета</th>
+							<th>Дата и время вылета</th>
+							<th>Название города назначения</th>
+							<th>Название аэропорта назначения</th>
+							<th>Время прибытия</th>
+							<th>Время в пути</th>
+							<th>Вероятность вылета</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="test-6-fc">SU 1192 </span></td>
+								<td><span class="test-6-at" >Airbus A321</span></td>
+								<td><span class="test-6-fcity">Москва</span></td>
+								<td><span class="test-6-from">Шереметьево</span></td>
+								<td>
+									<span class="test-6-dd">8/10/2020</span><br>
+									<span class="test-6-dt">15-00</span>
+								</td>
+								<td><span class="test-6-tcity">Казань</span></td>
+								<td><span class="test-6-to">Казань</span></td>
+								<td><span class="test-6-at">16-30</span></td>
+								<td><span class="test-6-ft" >2 часа</span></td>
+								<td><span class="test-6-fh" >Тут должна быть картинка</span></td>
+							</tr>
+							
+						</tbody>
+					</table>
+				
+					<h3>Пассажиры рейса</h3>
+					<div class="pass">
+						<table>
+						<thead>
+							<th>Имя</th>
+							<th>Фамилия</th>
+							<th>Дата рождения</th>
+							<th>Номер документа</th>
+							<th>Место в салоне туда</th>
+							<th>Место в салоне обратно</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span class="test-6-name">Иван </span></td>
+								<td><span class="test-6-last" >Иванов</span></td>
+								<td><span class="test-6-dob">25.06.1990</span></td>
+								<td><span class="test-6-doc">8710 222555</span></td>
+								<td>
+									<span class="test-6-ts" >1</span> <br> 
+									<input class="test-6-select" type="button" value="Выбрать место" onclick="parent.location='seat.html';">
+								</td>
+								<td><span class="test-6-bs" >2</span> <br> 
+									<input class="test-6-select" type="button" value="Выбрать место" onclick="parent.location='seat.html';">
+								</td>
+							</tr>
+							
+						</tbody>
+						</table>											
+					</div>					
+				</div>				
+			</div>
+		</section>
+		<!--Конец блока Бронирование-->		
+							
+		<!--Блок Подвал одинаковый на всех страницах, создается один раз на странице главная и копируется на все страницы проекта-->
+		<footer class="panel">
+			<div class="content">
+			
+				<h1>8 (800) 100-10-10</h1>
+			<p>
+				<a href="index.html">Главная</a>    |
+				<a href="login.html">Войти в личный кабинет</a>    |
+				<a href="signup.html">Зарегистрироваться</a>    |	
+				<a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+			</p>
+			</div>
+		</footer>
+		<!--Конец блока Подвал-->
+	
+	</body>
+</html>

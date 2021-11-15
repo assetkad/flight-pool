@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+		<!--Начало блока Стартовый экран-->
+		<section class="panel" id="first-page">
+			 <header>
+			 	<div class="content">
+					<a href="index.html"><img src="assets/img/logo.png" class="test-0-logo"></a> <!--Логотип-->
+					<nav><!--Начало блока меню-->
+						  <a href="#shares" class="test-0-nav-1">Акции</a> |
+						  <a href="#search" class="test-0-nav-2">Поиск</a> |
+						  <a href="signup.html" class="test-0-nav-3">Регистрация на рейс</a> |
+						  <a href="login.html" class="test-0-nav-4">Личный кабинет</a> 
+					</nav><!--Конец блока меню-->
+				</div> 
+			 </header>
+		</section>
+		<!--Конец блока Стартовый экран-->
+		
+		<!--Начало блока Инфографика-->
+		
+			<!--
+			Секция(и) описания принципа накопления бронирований для осуществления перелета с целью снижения его стоимости. 
+			Три принципа необходимо визуализировать при помощи анимированной инфографики на основе вводимых демо данных посетителем.	
+			В нашем примере никакой анимации не используется, мы моделируем ситуацию когда пользователь вводит данные в поля и получает график зависимости стоимости от данных
+			Файл изображение получаем из MS Excel стандартными функциями создания диаграмм
+			-->
+			
+		<section class="panel" id="infographics">
+			<div class="content">
+				<h1>Экономьте вместе с нами</h1>
+				<h2>Выберите возможные параметры и следите за изменениями</h2>
+				<form>
+					<input type="text" name="date" placeholder="КОГДА">
+					<input type="text" name="people" placeholder="СКОЛЬКО">
+					<input type="button" value="ПОИСК" class="test-0-fbs">
+				</form>
+				<img src="assets\img\linejnyj_grafik.png">
+			</div>		
+		</section>
+		<!--Конец блока Инфографика-->
+		
+		<!--Начало блока Доверие к компании-->
+		
+			<!--
+			Содержимое секции Доверие к компании нигде строго не указано. Мы выбрали Отзывы пользователей компании.
+			В качестве альтернативы это могут быть блоки с показателями компании: количество полетов, самолетов и т.д.
+			-->
+			
+		<section class="panel" id="trust">
+			<div class="content">
+			<h1>Наши путешественники</h1>
+				<div class="review">
+					<h3>Просто хорошая, удобная авиакомпания</h3>
+					<p class="comment">Всё было очень удобно, на каждом этапе. Гибкий выбор услуг при покупке билетов на сайте. Оба раза при электронной регистрации попались удобные места, случайность, но приятно. </p>
+					<p class="autor">Иван Иванов</p>
+				</div>
+				<div class="review">
+					<h3>Хорошо</h3>
+					<p class="comment">Летела на новом airbus 320 neo. Новый, красивый самолёт. Обслуживание хорошее. Взлёт и посадка прошли мягко.</p>
+					<p class="autor">Иванна Иванова</p></div>
+				<div class="review">
+					<h3>Хорошая авиакомпания</h3>
+					<p class="comment">Вылетал из Москвы 8 января,в конце праздников.Приложение S7 уведомляло о начале регистрации и вылете.Рейс не задержали,прилетел в Ростов раньше графика.</p>
+					<p class="autor">Семен Семенов</p>
+				</div>
+			</div>
+		</section>
+		<!--Конец блока Доверие к компании-->
+
+		<!--Начало блока Поиск-->
+		<section class="panel" id="search">
+			<div class="content">
+				<form>
+					<input type="text" name="departure_city" placeholder="ОТКУДА" class="test-0-fd">
+					<input type="text" name="destination_city" placeholder="КУДА" class="test-0-fa">
+					<input type="text" name="departure_date" placeholder="ВЫЛЕТ" class="test-0-fdt-">
+					<input type="text" name="arrival_date" placeholder="ПРИЛЕТ" class="test-0-fat">
+					<input type="text" name="number" placeholder="КОЛИЧЕСТВО" class="test-0-fnp">
+					<input type="button" value="ПОИСК" class="test-0-fbs" onclick="parent.location='search.html'">
+				</form>
+			</div>	
+		</section>
+		<!--Конец блока Поиск-->
+
+		<!--Начало блока Акции-->
+		<section  class="panel" id="shares">
+			<div class="content">
+				<h1>Наши акции</h1>
+				<div class="promo">
+					<img src="assets/img/promotion1.jpg">
+					<h3>Returning and Changing Your Tickets</h3>
+					<p>The pandemic has changed many travelers’ plans, but we know that it will not last forever. 
+						Once all of this is over, we will continue exploring this world the way we used to. 
+						Special rules that have been developed for this challenging situation will help you cancel your trip
+						or postpone it until later</p>
+					<input type="button" value="Подробнее...">
+				</div>
+				<div class="promo">
+					<img src="assets/img/promotion2.jpg">
+					<h3>Best offers</h3>
+					<p>To see again the streets that witnessed so much. To hug your beloved ones and look back to see
+						what you’ve come through. And to think of new dreams that will be so special!</p>
+					<input type="button" value="Подробнее...">
+				</div>
+				<div class="promo">
+					<img src="assets/img/promotion3.jpg">
+					<h3>See you more often</h3>
+					<p>Since the beginning of January, we have been expanding the geography of flights in Russia so that you can
+						see your loved ones more often. Choose our company to fly to where you are always expected</p>
+					<input type="button" value="Подробнее...">
+				</div>
+				<div class="promo">
+					<img src="assets/img/promotion4.jpg">
+					<h3>Everything is on again</h3>
+					<p>From August 10, we will resume flights to Turkey. Flights from Moscow to Antalya will be operated twice
+						a day daily, and flights on the Moscow-Dalaman route will be operated three to seven times a week</p>
+					<input type="button" value="Подробнее...">
+				</div>
+			</div>
+		</section>
+		<!--Конец блока Акции-->
+		
+		<!--Начало блока Подписка-->
+		<section class="panel" id="sub">
+			<div class="content">
+				<h1>Будь в курсе</h1>
+				<div class="sub-in">
+					<input type="text" placeholder="Введите свой e-mail">
+					<input type="button" value="Подписаться">
+				</div>
+			</div>
+		</section>
+		<!--Конец блока Подписка-->
+		
+		<!--Начало блока Подвал-->
+		<!--
+		Cписок ссылок для навигации предоставлен в медиафайлах
+		Если при выполнении задания остается время, неплохо создать страницу 404.html для страниц из подвала
+		Блок Подвал одинаковый на всех страницах, создается один раз на странице Главная и копируется на все страницы проекта
+		-->
+		<footer class="panel">
+			<div class="content">	
+				<h1>8 (800) 100-10-10</h1>
+				<p>
+					<a href="index.html">Главная</a>    |
+					<a href="login.html">Войти в личный кабинет</a>    |
+					<a href="signup.html">Зарегистрироваться</a>    |	
+					<a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>    |
+					<a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>    |
+					<a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>    |
+					<a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+				</p>
+			</div>
+		</footer>
+		<!--Конец блока Подвал-->
+	
+	</body>
+</html>

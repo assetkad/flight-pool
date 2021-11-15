@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>FlightPool</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+		<!--Начало блока Стартовый экран-->
+		<!--этот блок на вложенных страницах имеет свое оформление: занимает меньше места и не содержит фонового изображения-->
+		<section class="panel" id="first-page-in">
+			 <header>
+			 	<div class="content">
+					<a href="index.html"><img src="assets/img/logo.png" class="test-0-logo"></a><!--Логотип-->
+					
+					<h1>FlightPool</h1>
+									
+					<nav><!--Начало блока меню-->
+						  <a href="index.html#shares" class="test-0-nav-1">Акции</a> |
+						  <a href="index.html#search" class="test-0-nav-2">Поиск</a> |
+						  <a href="signup.html" class="test-0-nav-3">Регистрация на рейс</a> |
+						  <a href="login.html" class="test-0-nav-4">Личный кабинет</a> 
+					</nav><!--Конец блока меню-->
+				</div> 
+			 </header>
+		</section>
+		<!--Конец блока Стартовый экран-->
+		
+		<!--Начало блока Вход в ЛК-->
+		<section class="panel" id="register">
+			<div class="content">
+				<h1>Добро пожаловать</h1>
+				<h2>Пожалуйста заполните следующие поля</h2>
+				<form>
+					<input type="text" name="email" placeholder="Логин или e-mail" class="">
+					<input type="text" name="surname" placeholder="Фамилия" class="test-2-last ">
+					<input type="text" name="name" placeholder="Имя" class="test-2-name">
+					<input type="text" name="document" placeholder="Номер документа" class="test-2-doc ">
+					<input type="text" name="phone" placeholder="Телефон" class="test-2-phone">
+					<input type="password" name="password" placeholder="Пароль" class="test-2-pass">
+					<input type="password" name="password2" placeholder="Повторите Пароль" class="test-2-pass2">
+					<input type="button" value="Зарегистрироваться" id="openDialog" class="register test-2-btn" onclick="parent.location='login.html'">		
+				</form>
+				
+			<!--Работа с элементом диалог совсем не обязательна и нами была реализована скорее для наведения красоты в проекте-->
+			<dialog>
+			  <p>
+				Вы успешно зарегистрировались! Авторизуйтесь на странице входа!
+			  </p>
+			  <button id="closeDialog">Перейти к странице входа</button>
+			</dialog>
+		   
+
+		   <script>
+			  var dialog = document.querySelector('dialog')
+			  document.querySelector('#openDialog').onclick = function() {
+				dialog.showModal() // Показываем диалоговое окно
+			  }
+			  document.querySelector('#closeDialog').onclick = function() {
+				dialog.close();// Прячем диалоговое окно
+				parent.location='login.html';//уходим на страницу авторизации
+			  }
+			</script>
+			</div>			
+		</section>
+		<!--Конец блока Вход в ЛК-->
+		
+				
+		<!--Блок Подвал одинаковый на всех страницах, создается один раз на странице главная и копируется на все страницы проекта-->
+		<footer class="panel">
+			<div class="content">
+			
+				<h1>8 (800) 100-10-10</h1>
+			<p>
+				<a href="index.html">Главная</a>    |
+				<a href="login.html">Войти в личный кабинет</a>    |
+				<a href="signup.html">Зарегистрироваться</a>    |	
+				<a href="http://xxxxxx-m1.wsr.ru/contact">Контакты</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/news">Новости</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/return">Возврат</a>    |
+				<a href="http://xxxxxx-m1.wsr.ru/feedback">Обратная связь</a>
+			</p>
+			</div>
+		</footer>
+		<!--Конец блока Подвал-->
+	
+	</body>
+</html>
